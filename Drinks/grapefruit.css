@@ -1,0 +1,177 @@
+@font-face {
+    font-family: LilitaOne;
+    src: url(/Fonts/LilitaOne-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    display: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.page1 {
+    height: 100vh;
+    width: 100vw;
+    padding: 0 3vw 0 3vw;
+    position: relative;
+    background-color: #e0c9a6;
+    background: linear-gradient(to bottom right, #b8a2b8, #ffffff, #b8a2b8);
+}
+
+.img {
+    height: 75%;
+    position: absolute;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(16deg);
+}
+
+.page1 .img img {
+    width: 60%;
+    height: 100%;
+    filter: drop-shadow(3px 10px 15px black);
+}
+
+.head1 {
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head1 h1 {
+    font-size: 15.8vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #da22c4;
+    font-family: LilitaOne;
+    cursor: default;
+}
+
+.content {
+    height: 65%;
+    width: 100%;
+    display: flex;
+}
+
+.left {
+    height: 100%;
+    width: 50%;
+    padding: 2vw 3.5vw;
+}
+
+.left h1 {
+    font-size: 2.5vw;
+    font-family: gilroy;
+    text-transform: uppercase;
+    margin-bottom: 3vw;
+}
+
+.left p {
+    font-size: 1.7vw;
+    width: 80%;
+    cursor: default;
+    font-family: gilroy;
+    margin-bottom: 3vw;
+}
+
+.right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.right .top {
+    width: 80%;
+    height: 90%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.right .top img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    .page1 {
+        height: 95vh;
+        width: 100vw;
+        padding: 0 3vw 0 3vw;
+    }
+
+    .img {
+        height: 30%;
+        width: 40%;
+        top: 18%;
+        transform: translate(-50%, -50%) rotate(10deg);
+    }
+
+    .head1 {
+        height: 30%;
+    }
+
+    .head1 h1 {
+        font-size: 17vw;
+    }
+
+    .content {
+        height: 60%;
+        flex-direction: column;
+        margin-top: 10vw;
+    }
+
+    .left {
+        height: 50%;
+        width: 100%;
+        padding: 4vw 3.5vw;
+    }
+
+    .left h1 {
+        font-size: 9vw;
+        text-align: center;
+        margin-bottom: 7vw;
+    }
+
+    .left p {
+        font-size: 4.4vw;
+        width: 100%;
+        margin-bottom: 4vw;
+    }
+
+    .left p:nth-child(3) {
+        margin-bottom: 0vw;
+    }
+
+    .right {
+        height: 50%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .right .top {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+}
