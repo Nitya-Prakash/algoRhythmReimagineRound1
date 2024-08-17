@@ -1,7 +1,11 @@
-/*  */
 @font-face {
     font-family: LilitaOne;
     src: url(/Fonts/LilitaOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: gilroy;
+    src: url(./Fonts/Gilroy-Medium.otf);
 }
 
 * {

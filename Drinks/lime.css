@@ -3,6 +3,11 @@
     src: url(/Fonts/LilitaOne-Regular.ttf);
 }
 
+@font-face {
+    font-family: gilroy;
+    src: url(./Fonts/Gilroy-Medium.otf);
+}
+
 * {
     margin: 0;
     padding: 0;

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: gilroy;
+    src: url(./Fonts/Gilroy-Medium.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -705,7 +710,7 @@ nav {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 799px) {
     nav {
         height: 8vh;
         margin: 0 0vw;
@@ -772,6 +777,7 @@ nav {
     .page2 {
         border-bottom: 2px solid black;
         padding: 0vw 0vw;
+        overflow: hidden;
     }
 
     .page2-left {
@@ -851,16 +857,20 @@ nav {
         width: 42%;
         background-color: #c771a7;
         border-radius: 50%;
-        position: absolute;
+        /* position: absolute; */
         z-index: 5;
         cursor: pointer;
-        display: none;
+        display: block;
         transform: scale(.9);
         opacity: 1;
     }
 
     .card .cardImage {
         width: 50%;
+    }
+
+    .card .peach {
+        opacity: 1;
     }
 
     .card button {
